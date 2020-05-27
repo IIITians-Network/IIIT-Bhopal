@@ -1,0 +1,136 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.studentLife .slidershow {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.studentLife .navigation {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.studentLife .bar {
+    width: 90px;
+    height: 30px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.studentLife .bar:hover {
+    background: #fff;
+}
+
+.studentLife input[name="slide-button"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.studentLife .slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.studentLife .slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.studentLife .slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.studentLife .slide .content{
+    position: absolute;
+    background-color: rgba(255,255,255,0.6);
+    z-index: 1;
+    top: 40%;
+    width: 500px;
+    height: 400px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.studentLife #slide1:checked ~ .slide1 {
+    margin-left: 0;
+}
+
+.studentLife #slide1:checked ~ .slide1 img{
+    animation-name: scale-up;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.studentLife #slide2:checked ~ .slide1 {
+    margin-left: -20%;
+}
+
+.studentLife #slide2:checked ~ .slide2 img{
+    animation-name: scale-up;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.studentLife #slide3:checked ~ .slide1{
+    margin-left: -40%;
+}
+
+.studentLife #slide3:checked ~ .slide3 img{
+    animation-name: scale-up;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.studentLife #slide4:checked ~ .slide1 {
+    margin-left: -60%;
+}
+
+.studentLife #slide4:checked ~ .slide4 img{
+    animation-name: scale-up;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.studentLife #slide5:checked ~ .slide1 {
+    margin-left: -80%;
+}
+
+.studentLife #slide5:checked ~ .slide5 img{
+    animation-name: scale-up;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes scale-up{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
