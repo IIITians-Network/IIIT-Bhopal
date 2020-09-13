@@ -85,6 +85,11 @@
     <!--==================================Counter Up files over ==============-->
     <!--================= Loader ===============-->
 	    <style>
+         /* black font in all iiit dropdown */
+        .all-iiit a {
+            color: #121212;
+        }
+   
         .no-js #loader { display: none;  }
         .js #loader { display: block; position: absolute; left: 100px; top: 0; }
         .se-pre-con {
@@ -108,58 +113,51 @@
         <div class="container-fluid d-flex">
 
             <div class="logo mr-auto">
-                <a href="index.html"><img src="img/logo/iiitian.png" alt="" class="img-fluid"></a>
+                <a href="https://iiitiansnetwork.com"><img src="img/logo/iiitian.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li><a href="https://iiitiansnetwork.com/">Home</a></li>
-                   <!--  <li><a href="">Counselling</a></li>
-                    <li><a href="">News</a></li>
-                    <li class="drop-down"><a href="">Login</a>
-                        <ul>
-                            <li><a href="#">Student</a></li>
-                            <li><a href="#">Clubs</a></li>
-                            <li class="drop-down"><a href="#">Register</a>
-                                <ul>
-                                    <li><a href="">Individual</a></li>
-                                    <li><a href="">Club</a></li>
-                                    <li><a href="">Non-IIIT Students</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li> -->
-                    <li><a href="https://team.iiitiansnetwork.com/">Our Team</a></li>
-                    <li class="active"><a href="https://alliiit.iiitiansnetwork.com/">All IIIT</a>
-                        <!--           	<ul>
-                  <li><a href="#">IIITM Gwalior</a></li>
-                  <li><a href="#">IIIT Allahabad</a></li>
-                  <li><a href="#">IIITDM Kancheepuram</a></li>
-                  <li><a href="#">IIITDM Jabalpur</a></li>
-                  <li><a href="#">IIITDM Kurnool</a></li>
-                  <li><a href="#">IIIT Chittoor</a></li>
-                  <li><a href="#">IIIT Guwahati</a></li>
-                  <li><a href="#">IIIT Kalyani</a></li>
-                  <li><a href="#">IIIT Una</a></li>
-                  <li><a href="#">IIIT Vadodara</a></li>
-                  <li><a href="#">IIIT Kota</a></li>
-                  <li><a href="#">IIIT Tiruchirappalli</a></li>
-                  <li><a href="#">IIIT Sonepat</a></li>
-                  <li><a href="#">IIIT Manipur</a></li>
-                  <li><a href="#">IIIT Lucknow</a></li>
-                  <li><a href="#">IIIT Dharward</a></li>
-                  <li><a href="#">IIIT Pune</a></li>
-                  <li><a href="#">IIIT Bhopal</a></li>
-                  <li><a href="#">IIIT Agartala</a></li>
-                  <li><a href="#">IIIT Nagpur</a></li>
-                  <li><a href="#">IIIT Ranchi</a></li>
-                  <li><a href="#">IIIT Surat</a></li>
-                  <li><a href="#">IIIT Bhagalpur</a></li>
-                  <li><a href="#">IIIT Raichur</a></li>
-				</ul>
--->
-                    </li>
-                    <li><a href="https://contact.iiitiansnetwork.com/">Contact</a></li>
+                    <li><a href="https://iiitiansnetwork.com">Home</a></li>
+                    <li><a href="https://jeecounselling.iiitiansnetwork.com/">Jee Counselling</a></li>
+                    <li><a href="https://placement.iiitiansnetwork.com/">IIIT Placements</a></li>
+                                        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All IIIT
+                        </a>
+                        <div class="dropdown-menu all-iiit" aria-labelledby="navbarDropdown" style="max-height: 400px; overflow-y: scroll;">
+                            <a class="dropdown-item" target="_blank"  href="https://agartala.iiitiansnetwork.com">IIIT Agartala</a>
+                            <a class="dropdown-item" target="_blank"  href="https://allahabad.iiitiansnetwork.com">IIIT Allahabad</a>
+                            <a class="dropdown-item" target="_blank"  href="https://bhagalpur.iiitiansnetwork.com">IIIT Bhagalpur</a>
+                            <a class="dropdown-item active" target="_blank"  href="https://bhopal.iiitiansnetwork.com">IIIT Bhopal</a>
+                        <!--<a class="dropdown-item" target="_blank"  href="https://dharwad.iiitiansnetwork.com">IIIT Dharward</a> 
+                            <a class="dropdown-item" target="_blank"  href="https://guwahati.iiitiansnetwork.com">IIIT Guwahati</a> 
+                        --> <a class="dropdown-item" target="_blank"  href="https://gwalior.iiitiansnetwork.com">IIITM Gwalior</a>
+                            <a class="dropdown-item" target="_blank"  href="https://jabalpur.iiitiansnetwork.com">IIITDM Jabalpur</a>
+                            <a class="dropdown-item" target="_blank"  href="https://kalyani.iiitiansnetwork.com">IIIT Kalyani</a>
+                            <a class="dropdown-item" target="_blank"  href="https://kancheepuram.iiitiansnetwork.com">IIITDM Kancheepuram</a>
+                            <a class="dropdown-item" target="_blank"  href="https://kota.iiitiansnetwork.com">IIIT Kota</a>
+                            <a class="dropdown-item" target="_blank"  href="https://kurnool.iiitiansnetwork.com">IIITDM Kurnool</a>
+                            <a class="dropdown-item" target="_blank"  href="https://lucknow.iiitiansnetwork.com">IIIT Lucknow</a>
+                            <a class="dropdown-item" target="_blank"  href="https://manipur.iiitiansnetwork.com">IIIT Manipur</a>
+                            <a class="dropdown-item" target="_blank"  href="https://nagpur.iiitiansnetwork.com">IIIT Nagpur</a>
+                            <a class="dropdown-item" target="_blank"  href="https://pune.iiitiansnetwork.com">IIIT Pune</a>
+                            <a class="dropdown-item" target="_blank"  href="https://raichur.iiitiansnetwork.com">IIIT Raichur</a>
+                            <a class="dropdown-item" target="_blank"  href="https://ranchi.iiitiansnetwork.com">IIIT Ranchi</a>
+                            <a class="dropdown-item" target="_blank"  href="https://sonepat.iiitiansnetwork.com">IIIT Sonepat</a>
+                        <!--<a class="dropdown-item" target="_blank"  href="https://sricity.iiitiansnetwork.com">IIIT Sri City</a> 
+                            <a class="dropdown-item" target="_blank"  href="https://surat.iiitiansnetwork.com">IIIT Surat</a>
+                        --> <a class="dropdown-item" target="_blank"  href="https://tiruchirapalli.iiitiansnetwork.com">IIIT Tiruchirapalli</a>
+                            <a class="dropdown-item" target="_blank"  href="https://una.iiitiansnetwork.com">IIIT Una</a>
+                            <a class="dropdown-item" target="_blank"  href="https://vadodara.iiitiansnetwork.com">IIIT Vadodara</a>
+                        </div>
+   
+                        <li><a href="https://team.iiitiansnetwork.com/">Our Team</a></li>
+                        <li><a href="https://contact.iiitiansnetwork.com/">Contact</a></li>
+
+                    
+                    
                 </ul>
             </nav><!-- .nav-menu -->
 
@@ -541,19 +539,7 @@
     <!-- No need to change anything in footer area -->
     <footer id="footer">
 
-        <!--div class="footer-newsletter" data-aos="fade-up">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h4>Join Our Community</h4>
-                        <p>Help us in this idea for uniting all IIITs</p>
-                        <form action="https://formspree.io/xeqrqzrv" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div-->
+        
 
         <div class="footer-top">
             <div class="container">
@@ -584,8 +570,8 @@
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="http://team.iiitiansnetwork.com/">Core Team</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="http://team.iiitiansnetwork.com/#web">Web Team</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="http://team.iiitiansnetwork.com/#design">Design Team</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="http://team.iiitiansnetwork.com/#design">Animation Team</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a  href="http://team.iiitiansnetwork.com/#design">Design  & Animation Team</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a  href="http://team.iiitiansnetwork.com/#content">Content Team</a></li>
                         </ul>
                     </div>
 
@@ -609,17 +595,24 @@
                         
 						  
 						  	These Students of IIIT Bhopal have credits, authorities and the responsibilities to manage this page.
-						</p>
+                        </p>
+                        <div>
+                            <h3><a href="https://github.com/IIITians-Network/IIIT-Bhopal" target="_blank" ><i class="fa fa-pencil" aria-hidden="true">&nbsp; Edit this !</i></a></h3>
+                        </div>
                     </div>
+                    
 
                 </div>
             </div>
         </div>
 
         <div class="container py-4">
+            <!--
 			<div class="copyright">
                 &copy; Copyright <strong><span>IIITians Network</span></strong>. All Rights Reserved
-            </div>
+            </div> 
+            Copyright removed
+        -->
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you purchased the pro version. -->
